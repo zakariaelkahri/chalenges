@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+  float yards,km;
+  printf("please enter distance with km:");
+  scanf("%f",&km);
+  yards = km * 1093.61 ;
+  printf("distance with yards is : %.2f",yards);
+    return 0;
+}

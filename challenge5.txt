@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+float etat;
+printf("saisie la temperture de l'eau: ");
+scanf("%f",&etat);
+if (etat<0){
+ printf("-->etat de l'eau est Solid\n    :(");
+}else if (etat<100){
+ printf("-->etat de l'eau est Liquide\n    :)\n");   
+} else {
+ printf("-->etat de l'eau est Gaz\n    :()");   
+}
+ return 0;
+}
