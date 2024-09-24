@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+   char str[100],str2[100],str3[100],str4[100],str5[100];
+   printf ("name:");
+   scanf("%s", &str);
+   printf ("last name:");
+   scanf("%s", &str2);
+   printf ("age:");
+   scanf("%s", &str3);
+   printf ("gender:");
+   scanf("%s", &str4);
+   printf ("email:");
+   scanf("%s", &str5);
+   printf("\n--you enter-->\n name:%s\n last name:%s\n age:%s\n gender:%s\n email:%s\n ",str,str2,str3,str4,str5);
+    return 0;
+}
