@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+   float a,b,c,MP;
+   printf("saisie les trois nombre pour calculer la moyenne pondérée :\n");
+   scanf("%f\n",&a);
+   scanf("%f\n",&b);
+   scanf("%f",&c);
+   MP = (a+b+c)/3 ;
+   printf("la moyenne pondérée est :%f",MP);
+    return 0;
+}

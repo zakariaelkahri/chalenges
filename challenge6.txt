@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    double a, b;
+
+    // Saisir les deux nombres
+    printf("Entrez le premier nombre (a) : ");
+    scanf("%lf", &a);
+    printf("Entrez le deuxième nombre (b) : ");
+    scanf("%lf", &b);
+
+    // Calculs et affichage des résultats
+    printf("a + b = %.2lf\n", a + b);
+    printf("a - b = %.2lf\n", a - b);
+    printf("a * b = %.2lf\n", a * b);
+    if (b != 0) {
+        printf("a / b = %.2lf\n", a / b);
+    } else {
+        printf("Erreur : Division par zéro.\n");
+    }
+
+    return 0;
+}

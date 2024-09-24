@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+   int a;
+   printf("saisie un nombre pour cheking:\n");
+   scanf("%d",&a);
+   if(a%2==0){
+       printf("ce nombre est paire");
+   }else{
+   
+   printf("ce nombre est impaire");
+   }
+    return 0;
+}

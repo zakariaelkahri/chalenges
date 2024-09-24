@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+   char voyelle;
+   printf("pleas enter an alphabet :) ==> ");
+   scanf("%c",&voyelle);
+   switch (voyelle) {
+   case 'a':
+   printf("this is voyelle ");
+   break;
+   case 'i':
+   printf("this is voyelle ");
+   break;
+   case 'e':
+   printf("this is voyelle ");
+   break;
+   case 'o':
+   printf("this is voyelle ");
+   break;
+   case 'u':
+   printf("this is voyelle ");
+   break;
+   default:
+   printf("this is no voyelle ");
+   }
+   
+    return 0;
+}
+
