@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    int choix ;
+   printf("enter un nombre de 1 a 5  :\n");
+   printf("1. votre moyenne des notes est inferieur a 10 : \n");
+   printf("2. votre moyenne des notes est entre 10 est 12 : \n");
+   printf("3. votre moyenne des notes est entre 12 est 14 : \n");
+   printf("4. votre moyenne des notes est entre 14 est 16 : \n");
+   printf("5. votre moyenne des notes est entre 16 est 20 : \n");
+   scanf("%d",&choix);
+
+
+   switch (choix){
+   case 1:
+       printf("vous avez montionez recalé ");
+       break;
+        case 2:
+       printf("vous avez montionez passable ");
+       break;
+        case 3:
+       printf("vous avez montionez  assez bien ");
+       break;
+        case 4:
+       printf("vous avez montionez bien ");
+       break;
+        case 5:
+       printf("vous avez montionez tres bien ");
+       break;
+        default:
+            printf("vous navez pas choisis un nombre de 1 a 5 :(");
+            break;
+   }
+
+    return 0;
+}
