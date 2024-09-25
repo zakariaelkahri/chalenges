@@ -1,0 +1,17 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+int num1,a,b,c,d;
+printf("please enter a 4 numbers : ");
+scanf ("%d",&num1);
+a = num1/1000 ;
+b = (num1/100)%10 ;
+c = (num1/10)%10 ;
+d = num1%10 ;
+
+int result = d*1000+c*100+b*10+a;
+printf("les nombres en invers est: %d",result);
+
+    return 0;
+}
