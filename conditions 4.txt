@@ -4,13 +4,13 @@
 int main()
 {
     int a,b,c,d,x1,x2 ;
-   printf("enter a number a");
+   printf("enter a number a : ");
    scanf ("%d",&a);
    while(a==0){
-        printf("Please enter a different number : ");
+        printf("Please enter a different number not null : ");
             scanf("%d",&a);
    }
-   printf("enter a number b");
+   printf("enter a number b :  : ");
    scanf ("%d",&b);
    printf("enter a number c");
    scanf ("%d",&c);
@@ -31,4 +31,3 @@ int main()
 
     return 0;
 }
-
