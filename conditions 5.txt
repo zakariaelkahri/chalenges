@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+ int choice;
+ double m,year,d,h,mn,s;
+ printf("enter a year :");
+ scanf("%lf",&year);
+ printf ("1.months\n2.days\n3.hours\n4.minutes\n5.seconds ");
+ printf ("\npleas enter a number => ");
+ scanf("%d",&choice);
+
+ switch(choice) {
+ case 1:
+ m = year*12 ;
+ printf("%lf months",m);
+ break;
+ case 2:
+ d = year*365 ;
+ printf("%lf days",d);
+ break;
+ case 3:
+ h = year*8784 ;
+ printf("%lf hours",h);
+ break;
+ case 4:
+ mn = year*527040 ;
+ printf("%lf minutes",mn);
+ break;
+ case 5:
+ s = year*31622400 ;
+ printf("%lf seconds",s);
+ break;
+ default :
+ break;
+ }
+
+    return 0;
+}
