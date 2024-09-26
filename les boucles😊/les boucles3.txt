@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+   int n,a;
+   int somme = 0;
+   
+     printf("enter un nombre N pour donner  Somme des N Nombres  : ");
+     scanf("%d",&n);
+     for (a=1;a<=n;a++){
+    
+          somme = somme + a ;
+
+      }
+     printf("%d\n",somme) ;    
+ 
+
+    return 0;
+}
