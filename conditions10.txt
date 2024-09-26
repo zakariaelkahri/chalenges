@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+   int jour,mois,anne ;
+       printf("enter un date numiriquement :\n");
+       printf("enter un jour :");
+   scanf ("%d",&jour);
+          printf("enter un mois :");
+   scanf ("%d",&mois);
+          printf("enter un anne :");
+   scanf ("%d",&anne);
+       printf ("vous choisis : %d/%d/%d \n",jour,mois,anne);
+       printf("alore d'apres l'operation :\n");
+
+
+  switch(mois){
+      case 1 :
+        
+        printf ("%d-janvier-%d",jour,anne);
+      break;
+      case 2 :
+        printf ("%d-février-%d",jour,anne);
+      break;
+      case 3 :
+        printf ("%d-mars-%d",jour,anne);
+      break;
+      case 4 :
+        printf ("%d-avril-%d",jour,anne);
+      break;
+        case 5 :
+        printf ("%d-mai-%d",jour,anne);
+      break;
+      case 6 :
+        printf ("%d-juin-%d",jour,anne);
+      break;
+      case 7 :
+        printf ("%d-juillet-%d",jour,anne);
+      break;
+      case 8 :
+        printf ("%d-novembre-%d",jour,anne);
+      break;
+        case 9 :
+        printf ("%d-septembre-%d",jour,anne);
+      break;
+      case 10 :
+        printf ("%d-octobre-%d",jour,anne);
+      break;
+      case 11 :
+        printf ("%d-novembre-%d",jour,anne);
+      break;
+      case 12 :
+        printf ("%d-décembre-%d",jour,anne);
+      break;
+  } 
+   
+    return 0;
+}
