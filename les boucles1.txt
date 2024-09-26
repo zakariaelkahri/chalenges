@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+   int a,b   ;
+      printf("enter un nombre pour deonner son tableau de multiplication : ");
+      scanf("%d",&a);
+      for (int num=0;num<=10;num++){
+          b = num*a ;
+        printf("%d\n",b) ; 
+      }
+   
+    return 0;
+}

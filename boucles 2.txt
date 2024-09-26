@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+   int n,a;
+   int stock=1;
+   
+      printf("enter un nombre pour donner la factoriel de ce nombre est : ");
+      scanf("%d",&n);
+      for (a=1;a<=n;a++){
+          stock=stock*a;
+      }
+            printf("%d\n",stock) ;
+        
+
+    return 0;
+}
