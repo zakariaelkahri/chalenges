@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   int ind,num,f,mult,i;
+   
+   printf("saisie le nombres d'element : ");
+scanf("%d",&ind);
+   printf("saisie le facteur de multiplication : ");
+   scanf(" %d",&f);
+   int tab [ind] ;
+  for( i=0;i<ind;i++){
+     printf("saisie les element : ");
+     scanf("%d",&num);
+     tab[i]=num ;
+  }
+  for( i=0;i<ind;i++){
+    mult = tab[i]*f ; 
+     printf("le resultat est : %d\n ",mult);
+  }
+  
+        return 0;
+}

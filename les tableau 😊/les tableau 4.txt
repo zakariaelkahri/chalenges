@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   int ind,num,i,max = 0;
+   
+   printf("saisie le nombres d'element : ");
+scanf("%d",&ind);
+   int tab [ind] ;
+  for( i=0;i<ind;i++){
+     printf("saisie un nombres : ");
+     
+     scanf("%d",&num);
+     tab[i]=num ;
+  }
+  for( i=0;i<ind;i++){
+        if(tab[i]>max){
+            max = tab[i] ;
+        }
+    }
+     printf("le plus grand nombre est : %d",max);
+    return 0;
+}

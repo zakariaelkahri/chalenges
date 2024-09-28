@@ -1,0 +1,24 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   int ind,num,i;
+   
+   printf("saisie le nombres d'element : ");
+scanf("%d",&ind);
+   int tab [ind] ;
+  for( i=0;i<ind;i++){
+     printf("saisie un nombres : ");
+     
+     scanf("%d",&num);
+     tab[i]=num ;
+  }
+  int min = tab[0] ;
+  for( i=0;i<ind;i++){
+        if(tab[i]<min){
+            min = tab[i] ;
+        }
+    }
+     printf("le plus petit nombre est : %d",min);
+    return 0;
+}
