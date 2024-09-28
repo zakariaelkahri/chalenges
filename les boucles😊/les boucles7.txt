@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+int num ,s = 0 ;
+printf("saisie un nombre non null : ");
+scanf("%d",&num);
+while (num !=  0){
+    s = s*10 + num %10 ;
+    num = num / 10 ;
+    printf("%d\n",s);
+}
+
+}
+
