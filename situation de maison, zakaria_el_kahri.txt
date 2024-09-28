@@ -1,0 +1,78 @@
+exercice 1 :
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   int b;
+   int h;
+   int a ;
+   int p ;
+  printf("saisie le base de triangle : ") ;
+scanf("%d",&b);
+ printf("saisie hauteur de triangle : ") ;
+scanf("%d",&h);
+   a = (b * h)/2;
+   printf("l'aire de ce triagle est : %d :\n ",a);
+   p = 3*b;
+   printf("le périmetre est de ce triagle est : %d ",p);
+
+
+    return 0;
+}
+
+-----------------------------------------------------------------------------------
+
+exercice  2 :
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   float c;
+   printf("saisie votre temperature corporelle : ");
+   scanf("%f",&c);
+   if (c > 38){
+       printf("vous avez de la fivere .");
+   }else {
+       printf("votre temperature est normale.");
+
+   }
+   
+
+
+    return 0;
+}
+
+-----------------------------------------------------------------------------------
+
+exercice 3 :
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   int n  ;
+   int b;
+       printf ( "saisie un nombre pour la verification:");
+       scanf("%d",&n) ;
+  for (int i=2;i<=n-1;i++ ){
+      if(n % i== 0){
+      b=1;
+       break;   
+    
+      }else {
+      }
+}if (b==1){
+      printf (" %d ce n'eqst pas un nombre premier .",n);
+}else{ 
+      
+      
+      printf (" %d est un nombre premier .",n);
+}
+   
+   
+
+
+    return 0;
+}

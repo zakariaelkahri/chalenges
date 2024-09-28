@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int num ,index;
+ printf("saisie le nombre des index :  ");
+ scanf("%d",&num);
+    int tab[num];
+ for(int i = 0; i<num ; i++){
+      printf("saisie un nombre  :  ");
+      scanf("%d",&index);
+      tab[i]= index ;
+
+ }
+ for(int i = 0; i<num ; i++){
+      printf("le nombre stocker a l'index %d est : %d\n ",i, tab[i]);
+ }
+ 
+
+
+
+    return 0;
+}
