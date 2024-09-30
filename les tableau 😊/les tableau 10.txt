@@ -1,0 +1,45 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int e,n,r,b,rr,i,a ;
+printf("entrez les nombres d element tu peut ajoutez : ");
+scanf("%d",&e);
+    int num[e] ;
+for (int i=0 ; i<e ; i++ ) {
+printf("entrez un nombre : ") ;
+scanf("%d",&n);
+num[i] = n ;
+
+}
+printf("entrez un nombre de recherch est change : ") ;
+scanf("%d",&r);
+for (int i=0 ; i<e ; i++ ) {
+if(num[i] == r){
+ printf("ce nombre %d est exist .\n",r);
+ 
+   b=0 ;
+ break;
+ }else{
+     b=1;
+ }
+ 
+
+}
+if (b==1) {
+ printf("ce nombre %d est ne pas exist",r); 
+}
+printf("le nombre a remplace : ");
+scanf("%d",&rr);
+if(b==0){
+    for (int i=0 ; i<e ; i++ ) {
+ if(num[i] == r){
+     b=r ;
+     r=rr ;
+    printf("le nombre %d change par %d ",b,rr) ;
+ }   
+}
+}
+
+    return 0;
+}
