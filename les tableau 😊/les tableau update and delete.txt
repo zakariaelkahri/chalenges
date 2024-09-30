@@ -1,0 +1,44 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int f,e,n,r,b,i,d ;
+printf("entrez les nombres d element tu peut ajoutez : ");
+scanf("%d",&e);
+    int num[e] ;
+    
+for (int i=0 ; i<e ; i++ ) {
+printf("entrez un nombre : ") ;
+scanf("%d",&n);
+num[i] = n ;
+}
+printf("please enter how many numbers you want add : ");
+scanf("%d",&f) ;
+for(i=e;i<f+e;i++){
+    printf("enter the number you want add : ");
+    scanf("%d",&n);
+    num[i]=n ;
+}
+for(i=0;i<f+e;i++){
+    printf("list after modifying is : %d \n",num[i]) ;
+}
+start :
+printf("please enter the number you want to delete : ") ;
+scanf("%d",&n);
+for (i=0;i<e+f;i++){
+  if (num[i]== n){
+      n=i ;
+      for(i=n;i<e+f;i++){
+          num[i]=num[i+1];
+      }
+  }
+  else{
+     printf("you enter a number dosn't exist : try again\n") ; 
+     goto start ;
+  }
+}
+for(i=0;i<e+f-1;i++){
+    printf("%d\n",num[i]);
+} goto start ;
+    return 0;
+}
