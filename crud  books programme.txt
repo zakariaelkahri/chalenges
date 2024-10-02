@@ -125,7 +125,7 @@ case 4 ://delete
     break ;
     case 5 ://add
 
-        printf("how many books you want enter : ");
+        printf("how many books you want add : ");
 
         scanf(" %d",&E);
         z=e;
@@ -134,7 +134,6 @@ case 4 ://delete
      printf("book name : ");
      scanf(" %s",&book[i]);
 
-     goto start ;
     }
 
     goto start;
@@ -151,3 +150,4 @@ case 4 ://delete
 }
     return 0;
 }
+
