@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int max ;
+int maxm(int a,int b){
+  if(a>b){
+      max = a ;
+      printf("le nombre max est : %d",max);
+  }else if(a<b){
+      max = b ;
+      printf("le nombre max est : %d",max);
+  }else{
+      printf("les nombres sont egaux");
+  } 
+  
+}
+
+int main() {
+  int a,b;
+   printf("enter le nombre a : ");
+  scanf("%d",&a);
+
+   printf("enter le nombres b : ");
+  scanf("%d",&b);
+  max = maxm(a,b) ;
+
+    return 0;
+}

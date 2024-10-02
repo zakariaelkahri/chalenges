@@ -1,0 +1,153 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+
+int main()
+{
+    int e,operation,id,choice,j,i,E,z;
+
+    printf("how many books you want enter : ");
+    scanf("%d",&e);
+    char book[20][50] ;
+    char shifter [50] ;
+    int comp ;
+    for (i=0;i<e;i++){
+    printf("book name : ");
+    scanf(" %s",&book[i]);
+
+
+    }
+    start :
+    printf("please enter your operation : \n");
+    printf("1: display resault : \n");
+    printf("2: search : \n");
+    printf("3: Edit  : \n");
+    printf("4: Delete : \n");
+    printf("5: add new book : \n");
+    printf("6:to exit : \n");
+    scanf("%d",&operation);
+
+switch(operation){
+
+case 1 ://display :
+    for (i=0 ;i<e;i++){
+    printf("book name %d : %s\n",i+1,book[i]);
+    }
+    goto start ;
+    break;
+
+case 2 : //search :
+    search :
+    printf("enter 1 to search with id .\n");
+    printf("enter 2 to search with name .\n");
+    scanf("%d",&choice);
+    if (choice == 1){
+        for (i=0 ;i<e;i++){
+            printf("book name with id %d : %s\n",i+1,book[i]);
+        }
+    printf("please enter the Id of the book you want : ");
+    scanf(" %d",&id);
+
+    if(id<=e && id>0){
+        printf(" %s\n",book[id-1]);
+
+    }else{
+        printf("\nNo  book availabel\n");
+    }
+
+    }else if(choice==2){
+     printf("please enter the name of the book you want : ");
+    scanf( "%s",&shifter);
+    for(i=0;i<e;i++){
+    comp = strcmp(book[i],shifter) ;
+
+    if(comp == 0){
+
+    printf(" the book you enter is exist by the name %s \n",shifter);
+    break ;
+
+    }else {
+    printf(" there is no book  with the name %s \n",shifter);
+    break ;
+    }
+    }
+    }else{
+    printf("you choose another number \n");
+    printf("you need to choose number 1 or number 2 . \n");
+    goto search ;
+    }
+    goto start ;
+
+    break ;
+case 3 :// update :
+
+    printf("please enter the name of the book you want to change : ");
+    scanf( "%s",&shifter);
+    for(i=0;i<e;i++){
+    comp = strcmp(book[i],shifter) ;
+
+    if(comp == 0){
+
+    printf("please enter modification : ");
+    scanf(" %s",&shifter);
+    strcpy(book[i],shifter); } }
+
+    goto start ;
+    break;
+case 4 ://delete
+
+    printf("please enter the name of the book you want to delete : ") ;
+    scanf( "%s",&shifter);
+    for(i=0;i<e;i++){
+    comp = strcmp(book[i],shifter) ;
+
+    if(comp == 0){
+    for(j=i;j<e-1;j++){
+    strcpy(book[i],book[i+1])  ;
+
+    }
+    e--;
+    printf(" ==> Done !!<==\n") ;
+
+
+    break ;
+    }else {
+        printf(" there is no book  with the name %s ",shifter);
+        break ;
+    }
+    }
+
+
+    goto start;
+
+    break ;
+    case 5 ://add
+
+        printf("how many books you want enter : ");
+
+        scanf(" %d",&E);
+        z=e;
+        e=e+E;
+    for (i=z;i<e;i++){
+     printf("book name : ");
+     scanf(" %s",&book[i]);
+
+     goto start ;
+    }
+
+    goto start;
+        break;
+    default:
+    break;
+
+
+
+
+
+
+
+}
+    return 0;
+}

@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int f ;
+int fac(int a){
+    f = a*a ;
+    return f ; 
+}
+int main() {
+  int a ;
+  scanf("%d",&a);
+  f = fac(a);
+  printf("la factoriel de %d est %d",a,f);
+
+    return 0;
+}
